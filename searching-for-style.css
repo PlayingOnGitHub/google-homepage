@@ -1,0 +1,48 @@
+/* I used chrome's development tools to watch how
+Google's content changed size depending on the device used
+to access Google's home page. I emulated multiple screen sizes */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 15px;
+    color: rgb(181, 181, 181);
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    margin: 10px 50px 0px 0px;
+    flex-direction: column;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.links-to-the-left {
+    align-self: flex-start; /* need something to do it horizontally. This
+    is causing my links to vertically align. ALmost! Getting there! */
+}
+
+.links-to-the-right {
+    align-self: flex-end;
+    
+}
+
+main {
+
+}
+
+a {
+
+}
+
+footer {
+
+}

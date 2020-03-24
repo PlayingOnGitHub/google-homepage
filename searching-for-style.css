@@ -1,7 +1,9 @@
 /* I used chrome's development tools to watch how
 Google's content changed size depending on the device used
 to access Google's home page. I emulated multiple screen sizes */
-
+:root {
+    --grid-color: grey;
+}
 body {
     font-family: arial, sans-serif;
     font-size: 13px;
@@ -12,6 +14,7 @@ body {
 nav {
     display: flex;
     width: 100%;
+    height: 40px;
     margin: 23px 0px 0px 0px;
     flex-direction: row;
     
@@ -29,13 +32,72 @@ a:hover {
     text-decoration: underline;
 }
 
+/* TIP: think about how the spaces are contained! */
+
 .links-to-the-left {
+    width: 200px;
+    height: 40px;
+    align-self: flex-start;
+    /* let's make the height as big as the container to 
+    keep anything from spilling out and make the width
+    a set link to store the space I want for my links */
     margin-left: 17px;
 }
 
-.links-to-the-right {
-    margin-left: auto;
+.empty-middle-space {
+    /* let's make this equal to all the empty space between
+    left and right links. Make the height equal to container and
+    make the width equal to the space I want in between
+    the left and right sides. Should I make the width grow between
+    the space to make it even every time for device width? */
+    width: 100%;
+    height: 40px;
 }
+
+.links-to-the-right {
+    width: 400px;
+    height: 40px;
+    display: flex;
+    /* align-self: flex-start; */
+    /* let's do the same thing over here just like I did with
+    links to the left by filling in the width and height! */
+    /* margin-left: x pixels away from middle space */
+}
+
+.gmail-images-shape {
+    width: 120px;
+    height: 40px;
+}
+
+.a-grid {
+    display: grid;
+    grid-template-columns: 4px 4px 4px;
+    grid-template-rows: 4px 4px 4px;
+    gap: 2px;
+}
+
+.a-grid:hover {
+    --grid-color: black;
+}
+
+.cell-color {
+    opacity: 0.70;
+    background-color: var(--grid-color, grey)
+}
+
+/* #change-image {
+    background-image: url("./google-grid-state1.png");
+    width: 15px;
+    height: 15px;
+}
+
+#change-image:hover {
+    background-image: url("./google-grid-state2.png");
+}
+
+*/
+
+/* think about how I would turn this whole thing into a grid. I might have more control */
 
 main {
 

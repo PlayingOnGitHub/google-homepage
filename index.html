@@ -12,8 +12,8 @@
             <!-- navigation links go below this-->
             <div class="links-to-the-left">
                 <!-- links to the left -->
-                <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
-                <a href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
+                <a class="left-side-links" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+                <a class="left-side-links" href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
             </div>
             <div class="empty-middle-space"> <!-- empty space :) --> </div>
             <div class="links-to-the-right">
@@ -21,24 +21,32 @@
                 <div class="gmail-images-shape"> <!-- this makes a block so the grid
                     can take place without wrapping around the inside of
                     the navigation element -->
-                    <a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
-                    <a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
+                    <a class="left-side-links right-side-links" href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
+                    <a class="left-side-links right-side-links" href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
                 </div>
                 <!-- place grid here. More practicle to use an image. Simple version -->
                 <!-- <a href="#"><div id="change-image"></div></a> -->
-                <a href="#"><div class="a-grid">
-                    <div class="cell-color"></div>
-                    <div class="cell-color"></div>
-                    <div class="cell-color"></div>
-                    <div class="cell-color"></div>
-                    <div class="cell-color"></div>
-                    <div class="cell-color"></div>
-                    <div class="cell-color"></div>
-                    <div class="cell-color"></div>
-                    <div class="cell-color"></div>
-                </div></a>
-                <!-- consider turning entire document into a grid. Read more -->
+                <div class="flex-grid">
+                    <a href="#" class="grid-color">
+                        <div class="a-grid">
+                            <div class="cell-color"></div>
+                            <div class="cell-color"></div>
+                            <div class="cell-color"></div>
+                            <div class="cell-color"></div>
+                            <div class="cell-color"></div>
+                            <div class="cell-color"></div>
+                            <div class="cell-color"></div>
+                            <div class="cell-color"></div>
+                            <div class="cell-color"></div>
+                        </div>
+                    </a>
+                </div>
                 <!-- place letter J here-->
+                <a href="#">
+                    <div class="gmail-letter-box">
+                        <img src="./gmail-letter.png" alt="Your Gmail account" class="gmail-letter">
+                    </div>
+                </a>
             </div>
         </nav>
         <main>
@@ -47,9 +55,10 @@
                 site-feature -->
             <!-- A label tag should also be included to improve
                 form accessibility-->
-            <div>
+            <div class="google-logo-container">
                 <!-- put google image in here and use ::after to maybe add the share button -->
-
+                <img src="./google-spring-image.png" alt="Big air balloon and a bunny along for the ride. It's spring time in the photo" class="google-logo">
+            
             </div>
             <div>
                 <!-- Create the search box-->

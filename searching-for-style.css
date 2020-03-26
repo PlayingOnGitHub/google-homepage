@@ -2,7 +2,7 @@
 Google's content changed size depending on the device used
 to access Google's home page. I emulated multiple screen sizes */
 :root {
-    --grid-color: grey;
+    --grid-opacity: 0.55;
 }
 body {
     font-family: arial, sans-serif;
@@ -21,11 +21,16 @@ nav {
     
 }
 
-a {
+.left-side-links {
     text-decoration: none;
     color: black;
     padding-right: 15px;
     opacity: 0.75;
+}
+
+.right-side-links {
+    padding-right: 12px;
+    opacity: 0.87;
 }
 
 a:hover {
@@ -55,17 +60,22 @@ a:hover {
 }
 
 .links-to-the-right {
-    width: 400px;
+    width: 257px;
     height: 40px;
     display: flex;
-    /* align-self: flex-start; */
     /* let's do the same thing over here just like I did with
     links to the left by filling in the width and height! */
     /* margin-left: x pixels away from middle space */
+    
 }
 
 .gmail-images-shape {
-    width: 120px;
+    width: 114px;
+    height: 40px;
+}
+
+.flex-grid {
+    width: 25px;
     height: 40px;
 }
 
@@ -76,34 +86,54 @@ a:hover {
     gap: 2px;
 }
 
-.a-grid:hover {
-    --grid-color: black;
+.grid-color:hover {
+    --grid-opacity: 1.0;
 }
 
 .cell-color {
-    opacity: 0.70;
-    background-color: var(--grid-color, grey)
+    opacity: var(--grid-opacity, 0.55);
+    background-color: #000;
 }
 
-/* #change-image {
-    background-image: url("./google-grid-state1.png");
-    width: 15px;
-    height: 15px;
+.gmail-letter-box {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    margin-top: -10px;
+    margin-left: 10px;
 }
 
-#change-image:hover {
-    background-image: url("./google-grid-state2.png");
+.gmail-letter {
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    border-color: white;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    
 }
 
-*/
+/* Now for the fun picture and for making more stuff! I took my time
+to make everything look pretty similar to Google! */
 
-/* think about how I would turn this whole thing into a grid. I might have more control */
+.google-logo-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    /* needs to be edited */
+}
+
+.google-logo {
+    width: auto;
+    height: auto;
+}
 
 main {
-
-}
-
-a {
 
 }
 

@@ -137,7 +137,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 400px;
+    height: 50px;
     width: 100%;
 }
 
@@ -203,6 +203,7 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100px;
 }
@@ -212,29 +213,31 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 200px;
+    width: 40px;
     height: 100px;
     background-color: #f2f2f2;
     border-radius: 5px;
+    padding-right: 50px;
 }
 
 .i-am-feeling-lucky-container {
+    padding-left: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 200px;
+    width: 40px;
     height: 100px;
     background-color: #f2f2f2;
     border-radius: 5px;
 }
 
 .google-search {
-    
+    color: #222;
 }
 
 .i-am-feeling-lucky {
-
+    color: #222;
 }
 
 footer {

@@ -1,60 +1,56 @@
-/* I used chrome's development tools to watch how
-Google's content changed size depending on the device used
-to access Google's home page. I emulated multiple screen sizes */
+/* TIP: think about how the spaces are contained! */
+/* css variables */
 :root {
     --grid-opacity: 0.55;
 }
+
 body {
+    width: 100%;
+    height: 100%;
+    display: block;
     font-family: arial, sans-serif;
     font-size: 13px;
     color: black;
     background-color: white;
 }
 
+/* Site Navigation */
+
 nav {
     display: flex;
+    flex-direction: row;
     width: 100%;
     height: 40px;
     margin: 23px 0px 0px 0px;
-    flex-direction: row;
     
-    
-}
-
-.left-side-links {
-    text-decoration: none;
-    color: black;
-    padding-right: 15px;
-    opacity: 0.75;
-}
-
-.right-side-links {
-    padding-right: 12px;
-    opacity: 0.87;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-/* TIP: think about how the spaces are contained! */
+.left-side-links {
+    text-decoration: none;
+    color: black; /* defines link color */
+    padding-right: 15px; /* spacing between links */
+    opacity: 0.75;
+}
+
+.right-side-links {
+    text-decoration: none;
+    color: black;
+    padding-right: 12px;
+    opacity: 0.87;
+}
 
 .links-to-the-left {
     width: 200px;
     height: 40px;
     align-self: flex-start;
-    /* let's make the height as big as the container to 
-    keep anything from spilling out and make the width
-    a set link to store the space I want for my links */
     margin-left: 17px;
 }
 
 .empty-middle-space {
-    /* let's make this equal to all the empty space between
-    left and right links. Make the height equal to container and
-    make the width equal to the space I want in between
-    the left and right sides. Should I make the width grow between
-    the space to make it even every time for device width? */
     width: 100%;
     height: 40px;
 }
@@ -63,10 +59,6 @@ a:hover {
     width: 257px;
     height: 40px;
     display: flex;
-    /* let's do the same thing over here just like I did with
-    links to the left by filling in the width and height! */
-    /* margin-left: x pixels away from middle space */
-    
 }
 
 .gmail-images-shape {
@@ -115,25 +107,133 @@ a:hover {
     
 }
 
-/* Now for the fun picture and for making more stuff! I took my time
-to make everything look pretty similar to Google! */
+
+/* Main Content */
+
+main {
+    
+    width: 100%;
+    height: 500px;
+
+}
 
 .google-logo-container {
+    margin-top: 43px;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 300px;
     justify-content: center;
-    align-items: center;
-    /* needs to be edited */
+    height: 200px;
+    width: 100%;
 }
 
 .google-logo {
-    width: auto;
-    height: auto;
+    margin-right: 5px;
+    width: 500px;
+    height: 200px;
 }
 
-main {
+.text-box-flex-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+}
+
+.text-box-border-container {
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    height: 44px;
+    width: 600px;
+}
+/* edit here */
+.magnifying-glass-container {
+    display: flex;
+    flex-direction: row;
+    /* centers magnifying glass in container */
+    align-items: center;
+    height: 44px;
+    width: 20px;
+    margin-left: 15px;
+    margin-right: 12px;
+}
+
+.magnifying-glass {
+    width: 15px;
+    height: 15px;
+}
+
+.input {
+    width: 100%;
+    height: 44px;
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+}
+
+.input:focus {
+    outline: none;
+    font-size: 16px;
+}
+
+.microphone-container {
+    display: flex;
+    flex-direction: row;
+    /* centers microphone in container */
+    align-items: center;
+    height: 44px;
+    width: 20px;
+    margin-left: 15px;
+    margin-right: 12px;
+}
+
+.microphone {
+    width: 14px;
+    height: 20px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.google-search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.i-am-feeling-lucky-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.google-search {
+    
+}
+
+.i-am-feeling-lucky {
 
 }
 

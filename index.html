@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- First include a "CSS Reset" stylesheet to override user's 
-             default browser styles -->
-        
-        <!-- Now, include my own style sheet-->
+        <!-- Link to stylesheet -->
         <link href="./searching-for-style.css" rel="stylesheet">
     </head>
+
     <body>
         <nav>
-            <!-- navigation links go below this-->
+            <!-- Left side links-->
             <div class="links-to-the-left">
-                <!-- links to the left -->
                 <a class="left-side-links" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
                 <a class="left-side-links" href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
             </div>
-            <div class="empty-middle-space"> <!-- empty space :) --> </div>
+    
+            <!-- empty space :) Alternatives? -->
+            <div class="empty-middle-space"></div>
+
+            <!-- Right side links-->
             <div class="links-to-the-right">
-                <!-- links to the right -->
-                <div class="gmail-images-shape"> <!-- this makes a block so the grid
-                    can take place without wrapping around the inside of
-                    the navigation element -->
-                    <a class="left-side-links right-side-links" href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
-                    <a class="left-side-links right-side-links" href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
+                <div class="gmail-images-shape">
+                    <a class="right-side-links" href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
+                    <a class="right-side-links" href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
                 </div>
-                <!-- place grid here. More practicle to use an image. Simple version -->
-                <!-- <a href="#"><div id="change-image"></div></a> -->
+
+                <!-- I made a grid! -->
                 <div class="flex-grid">
                     <a href="#" class="grid-color">
                         <div class="a-grid">
@@ -41,7 +39,8 @@
                         </div>
                     </a>
                 </div>
-                <!-- place letter J here-->
+
+                <!-- Place letter J here-->
                 <a href="#">
                     <div class="gmail-letter-box">
                         <img src="./gmail-letter.png" alt="Your Gmail account" class="gmail-letter">
@@ -49,29 +48,24 @@
                 </a>
             </div>
         </nav>
-        <main>
-            <!-- This main tag should include the search box for 
-                google since the search box is Google's primary 
-                site-feature -->
-            <!-- A label tag should also be included to improve
-                form accessibility-->
-            <div class="google-logo-container">
-                <!-- put google image in here and use ::after to maybe add the share button -->
-                <img src="./google-spring-image.png" alt="Big air balloon and a bunny along for the ride. It's spring time in the photo" class="google-logo">
-            
-            </div>
-            <div>
-                <!-- Create the search box-->
-                <div>
-                    <!-- Place the lens image to the beginning, the far left of
-                         the search box. Place the lens inside the search box -->
-                    
-                </div>
-                <div>
-                    <!-- Place microphone to the inside far-right of search box-->
-                </div>
-            </div>
 
+        <!-- Main content! -->
+        <main>
+            <div class="google-logo-container">
+                <img src="./google-spring-image.png" alt="Big air balloon and a bunny along for the ride. It's spring time in the photo" class="google-logo">
+            </div>
+            <!-- Start creating the text box! -->
+            <div class="text-box-flex-container">
+                <div class="text-box-border-container">
+                    <div class="magnifying-glass-container">
+                        <img src="magnifying-glass.png" alt="magnifying glass" class="magnifying-glass">
+                    </div>
+                    <input type="text" class="input" name="search">
+                    <div class="microphone-container">
+                        <img src="microphone.png" alt="microphone" class="microphone">
+                    </div>
+                </div>
+            </div>
         </main>
     </body>
 </html>

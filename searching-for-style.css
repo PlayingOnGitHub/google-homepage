@@ -56,7 +56,7 @@ a:hover {
 }
 
 .links-to-the-right {
-    margin-right: 8px;
+    margin-right: 0px;
     width: 257px;
     height: 40px;
     display: flex;
@@ -231,6 +231,8 @@ main {
     justify-content: center;
     align-items: center;
     margin-right: 12px;
+
+    cursor: pointer;
 }
 
 .i-am-feeling-lucky-search-container {
@@ -247,7 +249,9 @@ main {
     justify-content: center;
     align-items: center;
 
+    cursor: pointer;
 }
+
 
 .google-search {
     border-color: transparent;
@@ -255,6 +259,7 @@ main {
     background-color: transparent;
     color: #5F6368;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .i-am-feeling-lucky {
@@ -263,14 +268,34 @@ main {
     background-color: transparent;
     color: #5F6368;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .i-am-feeling-lucky:focus {
     outline: none;
+    
 }
 
 .google-search:focus {
     outline: none;
+}
+
+.google-search-container:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    border: 1px solid #c6c6c6;
+}
+
+.i-am-feeling-lucky-search-container:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    border: 1px solid #c6c6c6;
+}
+
+.google-search-container:active {
+    border: 1px solid #4d90fe;
+}
+
+.i-am-feeling-lucky-search-container:active {
+    border: 1px solid #4d90fe;
 }
 
 .corona-virus-container {
@@ -337,9 +362,13 @@ footer {
 }
 
 .footer-links-to-the-left {
+    margin-left: 3px;
     width: 380px;
     height: 40px;
-    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .advertising {
@@ -358,5 +387,26 @@ footer {
 }
 
 .footer-links-to-the-right {
+    margin-right: 30px;
+    width: 380px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
 
+.privacy {
+    height: 40px;
+    width: 72.91px;
+}
+
+.terms {
+    height: 40px;
+    width: 65.13px;
+}
+
+.settings {
+    height: 40px;
+    width: 77.59px;
 }

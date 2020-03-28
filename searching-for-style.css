@@ -5,8 +5,6 @@
 }
 
 body {
-    width: 100%;
-    height: 100%;
     display: block;
     font-family: arial, sans-serif;
     font-size: 13px;
@@ -29,17 +27,19 @@ a:hover {
     text-decoration: underline;
 }
 
-.left-side-links {
+.no-decoration {
     text-decoration: none;
+}
+
+.left-side-links {
     color: black; /* defines link color */
     padding-right: 15px; /* spacing between links */
     opacity: 0.75;
 }
 
 .right-side-links {
-    text-decoration: none;
     color: black;
-    padding-right: 12px;
+    padding-right: 10px;
     opacity: 0.87;
 }
 
@@ -56,13 +56,14 @@ a:hover {
 }
 
 .links-to-the-right {
+    margin-right: 8px;
     width: 257px;
     height: 40px;
     display: flex;
 }
 
 .gmail-images-shape {
-    width: 114px;
+    width: 111px;
     height: 40px;
 }
 
@@ -90,8 +91,8 @@ a:hover {
 .gmail-letter-box {
     height: 40px;
     width: 40px;
-    position: relative;
-    margin-top: -10px;
+    /* position: relative; */
+    margin-top: -8px;
     margin-left: 10px;
 }
 
@@ -133,7 +134,7 @@ main {
 }
 
 .text-box-flex-container {
-    margin-top: 20px;
+    margin-top: 26px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -199,47 +200,163 @@ main {
     height: 20px;
 }
 
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+}
+
 .search-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100px;
+    margin-top: 30px;
+    width: 400px;
+    height: 40px;
 }
 
 .google-search-container {
+    width: 127.41px;
+    height: 36px;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    background: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+    font-size: 14px;
+
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 100px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    padding-right: 50px;
+    align-items: center;
+    margin-right: 12px;
 }
 
-.i-am-feeling-lucky-container {
-    padding-left: 50px;
+.i-am-feeling-lucky-search-container {
+    width: 142.5px;
+    height: 36px;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    background: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+    font-size: 14px;
+
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 100px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
+    align-items: center;
+
 }
 
 .google-search {
-    color: #222;
+    border-color: transparent;
+    border-style: none;
+    background-color: transparent;
+    color: #5F6368;
+    font-size: 14px;
 }
 
 .i-am-feeling-lucky {
-    color: #222;
+    border-color: transparent;
+    border-style: none;
+    background-color: transparent;
+    color: #5F6368;
+    font-size: 14px;
 }
 
+.i-am-feeling-lucky:focus {
+    outline: none;
+}
+
+.google-search:focus {
+    outline: none;
+}
+
+.corona-virus-container {
+    margin-top: 18px;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.corona-image-container {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.do-the-five-container {
+    margin-left: 5px;
+    height: 45px;
+    width: 220px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.corona-image {
+    width: 45px;
+    height: 45px;
+}
+
+/* Site Footer */
+
 footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 40px;
+    background: #f2f2f2;
+    line-height: 40px;
+    border-top: 1px solid #e4e4e4;
+}
+
+.footer-link {
+    color: #5f6368;
+    padding-left: 27px;
+    font-size: 14px;
+}
+
+.footer-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-links-to-the-left {
+    width: 380px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.advertising {
+    height: 40px;
+    width: 96.27px;
+}
+
+.business {
+    height: 40px;
+    width: 83.81px;
+}
+
+.how-search-works {
+    height: 40px;
+    width: 143.7px;
+}
+
+.footer-links-to-the-right {
 
 }

@@ -13,7 +13,7 @@
                 <a class="left-side-links no-decoration" href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
             </div>
     
-            <!-- empty space :) Alternatives? -->
+            <!-- empty space :) -->
             <div class="empty-middle-space"></div>
 
             <!-- Right side links-->
@@ -39,8 +39,6 @@
                         </div>
                     </a>
                 </div>
-
-                <!-- Place letter J here-->
                 <a href="#">
                     <div class="gmail-letter-box">
                         <img src="./gmail-letter.png" alt="Your Gmail account" class="gmail-letter">
@@ -54,28 +52,34 @@
             <div class="google-logo-container">
                 <img src="./google-spring-image.png" alt="Big air balloon and a bunny along for the ride. It's spring time in the photo" class="google-logo" title="Spring 2020!">
             </div>
-            <div class="text-box-flex-container">
-                <div class="text-box-border-container">
-                    <div class="magnifying-glass-container">
-                        <img src="magnifying-glass.png" alt="magnifying glass" class="magnifying-glass">
-                    </div>
-                    <input type="text" class="input" title="Search" name="search">
-                    <div class="microphone-container">
-                        <a href="#"><img src="microphone.png" alt="microphone" class="microphone" title="Search by voice"></a>
-                    </div>
-                </div>
-            </div>
-            <!-- start making search buttons! -->
-            <div class="center">
-                <div class="search-container">
-                    <div class="google-search-container">
-                        <input type="submit" class="google-search" value="Google Search">
-                    </div>
-                    <div class="i-am-feeling-lucky-search-container">
-                        <input type="submit" class="i-am-feeling-lucky" value="I'm Feeling Lucky">
+            <form action="http://www.google.com/search" method="get">
+                <div class="text-box-flex-container">
+                    <div class="text-box-border-container">
+                        <div class="magnifying-glass-container">
+                            <img src="magnifying-glass.png" alt="magnifying glass" class="magnifying-glass">
+                        </div>
+
+                        <label for="input"></label>
+                        <input type="text" id="input" title="Search" name="q">
+
+                        <div class="microphone-container">
+                            <a href="#"><img src="microphone.png" alt="microphone" class="microphone" title="Search by voice"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="center">
+                    <div class="search-container">
+                        <div class="google-search-container">
+                            <input type="submit" class="google-search" value="Google Search">
+                        </div>
+                        <div class="i-am-feeling-lucky-search-container">
+                            <input type="submit" class="i-am-feeling-lucky" value="I'm Feeling Lucky">
+                            <!-- Not adding any additional functionality to the "I'm Feeling Lucky" button,
+                                 because this project was solely to make the webpage appear like Google. -->
+                        </div>
+                    </div>
+                </div>
+            </form>
             <div class="corona-virus-container">
                 <div class="corona-image-container">
                     <img src="corona-image.gif" alt="A hand holding up five fingers inside of an image of a stop sign" class="corona-image">
